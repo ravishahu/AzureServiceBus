@@ -14,8 +14,13 @@ namespace AzureServiceBus
         
         static void Main(string[] args)
         {
-            //AddtoMessageQueue();
+            AddtoMessageQueue();
 
+            ReadFromQueue();
+        }
+
+        private static void ReadFromQueue()
+        {
             string sbConnectionString = "Endpoint=sb://sprkservicebus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=jZ7tAXX+RWChZU+TQN4g29J/QTbB48xRVAY0hlAy5lU=;";
             string sbQueueName = "Recharge";
 
